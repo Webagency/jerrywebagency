@@ -1,60 +1,30 @@
 <html>
 <head>
-<link rel="stylesheet" href="rmm-css/responsivemobilemenu.css" type="text/css"/>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript" src="rmm-js/responsivemobilemenu.js"></script>
+<link rel="stylesheet" href="slidebars/slidebars.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
+<script src="slidebars/slidebars.min.js"></script>
+<script>
+			(function($) {
+				$(document).ready(function() {
+					$.slidebars();
+				});
+			}) (jQuery);
+</script>
 <title> De beste app ooit! </title>
-<style>
-BODY {
-background-color: #fff; 
-padding: 0;
-margin: 0;}
-
-.menu {
-background: #F1F1F1;
-height: 60px; 
-position: fixed;
-bottom: 0;
-width: 100%; 
-box-shadow: 1px -1px 0px 0px grey; }
-
-.menu p {
-font-family: trebuchet MS;
-padding-left: 10px;
-vertical-align: middle; }
-
-.header {
-background: #F1F1F1;
-height: 60px;
-position: fixed;
-top: 0; 
-width: 100%; 
-box-shadow: 0px 0px 10px 4px lightgrey;
-border-bottom: 1px solid #F9F9F9; }
-
-.header p {
-font-family: verdana;
-font-size: 20px;
-color: #C6C6C6; 
-text-align: center; }
-</style>
 </head>
 <body>
-<div class="header">
-	<p>Header</p>
+<div id="sb-site">
+	<div class="header">
+		<div class="sb-toggle-left"><img class="menu" src="img/menu.png"></div
+	</div>
+	<iframe src="http://www.wordpress-agency.nl/stroet-kuipers"></iframe>
 </div>
-<div class="rmm">
-        <ul>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#about-me'>About me</a></li>
-            <li><a href='#gallery'>Gallery</a></li>
-            <li><a href='#blog'>Blog</a></li>
-            <li><a href='#links'>Links</a></li>
-            <li><a href='#sitemap'>Sitemap</a></li> 
-       </ul>
-</div>
-<div class="menu">
-	<p> menu </p>
-</div>
+	<div class="sb-slidebar sb-left">
+		<div class="nav-left">
+			Links
+		</div>
+	</div>
 </body>
 </html>
